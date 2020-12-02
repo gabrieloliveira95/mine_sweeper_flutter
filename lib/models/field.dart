@@ -32,7 +32,7 @@ class Field {
     if (_isOpen) return;
     _isOpen = true;
     if (_isMined) {
-      _isExploded = null;
+      _isExploded = true;
       throw ExplosionException();
     }
     if (safeNeighborhoods) {
